@@ -2,7 +2,8 @@ name: wxread
 
 on:
   schedule:
-    - cron: '0 22 02 * *'  # 每天北京时间凌晨1点执行（UTC时间17点）
+    - cron: '8 6 * * *'  # 每天北京时间早上6点8分执行
+      timezone: Asia/Shanghai  # 可选：设置时区为北京时间
   workflow_dispatch:  # 手动触发
 
 jobs:
